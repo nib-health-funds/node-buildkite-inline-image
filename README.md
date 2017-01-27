@@ -11,11 +11,13 @@ Read more at the buildkite docs [here](https://buildkite.com/docs/builds/images-
 var buildkiteInlineImage = require('@nib/buildkite-inline-image');
 
 // Inline image from url
-buildkiteInlineImage.inlineURLImage('https://github.com/nib-health-funds/node-buildkite-inline-image/blob/master/docs/inline_image_example.png');
+var inlineImage = buildkiteInlineImage.inlineURLImage('https://github.com/nib-health-funds/node-buildkite-inline-image/blob/master/docs/inline_image_example.png');
+console.log(inlineImage);
 
 // Or, from an uploaded artifact
 var artifactFilePath = '/path/to/artifact.png';
-buildkiteInlineImage.inlineArtifactImage(artifactFilePath);
+var inlineArtifactImage = buildkiteInlineImage.inlineArtifactImage(artifactFilePath);
+console.log(inlineArtifactImage);
 ```
 The above would result in something similiar to the following output:
 ![Usage example output](https://github.com/nib-health-funds/node-buildkite-inline-image/blob/master/docs/inline_image_example.png)
