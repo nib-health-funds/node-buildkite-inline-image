@@ -1,6 +1,6 @@
 {
   "name": "@nib/buildkite-inline-image",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Provides an easy way to output inline images into your buildkite output log from node.",
   "main": "index.js",
   "scripts": {
